@@ -10,32 +10,19 @@ const lettersSecondRow = ["A", "S", "D", "F", "G", "H", "J", "K", "L"];
 
 const lettersThirdRow = ["Z", "X", "C", "V", "B", "N", "M"];
 
-export function Keyboard({ onClickLetters, chances, getRandomLetter }) {
+export function Keyboard({ chances, getRandomLetter }) {
   return (
     <div className="keyboard-container">
       <div className="keyboard-button">
-        {letters &&
-          letters.map((item) => (
-            <button onClick={() => onClickLetters(item)} key={item}>
-              {item}
-            </button>
-          ))}
+        {letters && letters.map((item) => <button key={item}>{item}</button>)}
       </div>
       <div className="keyboard-button">
         {lettersSecondRow &&
-          lettersSecondRow.map((item) => (
-            <button onClick={() => onClickLetters(item)} key={item}>
-              {item}
-            </button>
-          ))}
+          lettersSecondRow.map((item) => <button key={item}>{item}</button>)}
       </div>
       <div className="keyboard-button">
         {lettersThirdRow &&
-          lettersThirdRow.map((item) => (
-            <button onClick={() => onClickLetters(item)} key={item}>
-              {item}
-            </button>
-          ))}
+          lettersThirdRow.map((item) => <button key={item}>{item}</button>)}
         <button className="button-chances" onClick={getRandomLetter}>
           <img src={IconPokebola} alt="Chances" />
           <div className="chances">
