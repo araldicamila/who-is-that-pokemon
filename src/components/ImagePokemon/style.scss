@@ -1,0 +1,9 @@
+.shadow-pokemon {
+  filter: drop-shadow(-40px 0 200px #fff);
+
+  img {
+    width: 300px;
+
+    filter: brightness(0);
+  }
+}

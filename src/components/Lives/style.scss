@@ -1,0 +1,21 @@
+.lifes-container {
+  background-image: url("../../assets/images/heart.svg");
+
+  background-repeat: no-repeat;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-size: 214px;
+  width: 214px;
+  height: 170px;
+
+  margin: auto;
+  position: relative;
+
+  p {
+    font-size: 80px;
+    color: #fff;
+  }
+}
