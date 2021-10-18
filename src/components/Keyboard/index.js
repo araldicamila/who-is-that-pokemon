@@ -10,23 +10,56 @@ const lettersSecondRow = ["A", "S", "D", "F", "G", "H", "J", "K", "L"];
 
 const lettersThirdRow = ["Z", "X", "C", "V", "B", "N", "M"];
 
-export function Keyboard() {
+export function Keyboard({
+  onClickLetter,
+  onClickChances,
+  chances,
+  checkStatus,
+}) {
+  function letterStatus(letter) {
+    // Função para retornar a imagem de certo ou errado
+    switch (checkStatus(letter)) {
+      case "right":
+        return <img src={IconRight} alt="Letra correta" />;
+      case "wrong":
+        return <img src={IconWrong} alt="Letra errada" />;
+      default:
+        return null;
+    }
+  }
+
   return (
     <div className="keyboard-container">
       <div className="keyboard-button">
-        {letters && letters.map((item) => <button key={item}>{item}</button>)}
+        {letters &&
+          letters.map((item) => (
+            <button onClick={() => onClickLetter(item)} key={item}>
+              {item}
+              {letterStatus(item)}
+            </button>
+          ))}
       </div>
       <div className="keyboard-button">
         {lettersSecondRow &&
-          lettersSecondRow.map((item) => <button key={item}>{item}</button>)}
+          lettersSecondRow.map((item) => (
+            <button onClick={() => onClickLetter(item)} key={item}>
+              {item}
+              {letterStatus(item)}
+            </button>
+          ))}
       </div>
       <div className="keyboard-button">
         {lettersThirdRow &&
-          lettersThirdRow.map((item) => <button key={item}>{item}</button>)}
-        <button className="button-chances">
+          lettersThirdRow.map((item) => (
+            <button onClick={() => onClickLetter(item)} key={item}>
+              {item}
+              {letterStatus(item)}
+            </button>
+          ))}
+        <button className="button-chances" onClick={onClickChances}>
           <img src={IconPokebola} alt="Chances" />
           <div className="chances">
-            <p>0</p>
+            <p>{chances}</p>
           </div>
         </button>
       </div>
