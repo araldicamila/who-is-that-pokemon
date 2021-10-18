@@ -1,8 +1,8 @@
 import { Modal } from "../Modal";
 
-import IconPokebola from "../../assets/images/icon-pokebola.svg";
+import IconPokebola from "../../assets/images/icon-pokebola.png";
 
-export const ModalSuccess = ({ open }) => {
+export function ModalSuccess({ open }) {
   return (
     <Modal open={open}>
       <img src={IconPokebola} alt="Pokébola" />
@@ -10,4 +10,4 @@ export const ModalSuccess = ({ open }) => {
       <p>Pokébolas desbloqueiam uma letra correta.</p>
     </Modal>
   );
-};
+}

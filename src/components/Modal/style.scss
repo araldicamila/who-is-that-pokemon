@@ -19,7 +19,7 @@
   }
 
   .modal-container {
-    background-image: url("../../assets/images/background-white.svg");
+    background-image: url("../../assets/images/background.svg");
     background-color: #fff;
 
     width: 300px;
@@ -52,6 +52,8 @@
     position: absolute;
     right: -15px;
     top: -15px;
+
+    cursor: pointer;
   }
 
   p,

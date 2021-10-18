@@ -9,6 +9,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  header {
+    position: absolute;
+    top: 24px;
+    left: 0;
+
+    padding: 0 160px;
+  }
 }
 
 .game-name-pokemon {

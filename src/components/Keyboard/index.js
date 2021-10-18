@@ -10,7 +10,7 @@ const lettersSecondRow = ["A", "S", "D", "F", "G", "H", "J", "K", "L"];
 
 const lettersThirdRow = ["Z", "X", "C", "V", "B", "N", "M"];
 
-export function Keyboard({ chances, getRandomLetter }) {
+export function Keyboard() {
   return (
     <div className="keyboard-container">
       <div className="keyboard-button">
@@ -23,10 +23,10 @@ export function Keyboard({ chances, getRandomLetter }) {
       <div className="keyboard-button">
         {lettersThirdRow &&
           lettersThirdRow.map((item) => <button key={item}>{item}</button>)}
-        <button className="button-chances" onClick={getRandomLetter}>
+        <button className="button-chances">
           <img src={IconPokebola} alt="Chances" />
           <div className="chances">
-            <p>{chances}</p>
+            <p>0</p>
           </div>
         </button>
       </div>
