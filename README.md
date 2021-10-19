@@ -2,7 +2,7 @@
 
 VAI SER A GRANDE A EMOÇÃOOOO, POKEEEEEEEEEMON 🎸🎸
 
-Você, quer ser um mestre pokémon? Que tal iniciar testando seus conhecimento com os 151 pokémons da 1ª geração? 
+Você quer ser um mestre pokémon? Que tal iniciar testando seus conhecimento com os 151 pokémons da 1ª geração? 
 
 Neste mini-game, você precisa descobrir qual é o pokémon da sombra, se acertar, ganha uma "chance extra" que pode te ajduar a montar o nome, se não, você irá perder vidas, e quando chegar no 0, você então saberá que ainda não é um mestre pokémon e precisará reiniciar o jogo! 😜
 
