@@ -136,7 +136,10 @@ export function Game() {
       />
       <ModalError
         open={openModalError}
-        onClickClose={() => setOpenModalError(false)}
+        onClickClose={() => {
+          setOpenModalError(false);
+          history.push("/");
+        }}
         onClickTryAgain={() => history.push("/")}
       />
     </main>
