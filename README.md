@@ -22,4 +22,6 @@ Figma do projeto completo: [QUEM É ESSE POKÉMON?](https://www.figma.com/file/H
   yarn start/npm start
 ```
 
-Projeto desenvolvido em live coding, junto com a comunidade [Dev Girls Mentor](https://discord.com/invite/8m8ByW8raM). 
+Projeto desenvolvido em live coding, junto com a comunidade [Dev Girls Mentor](https://discord.com/invite/8m8ByW8raM). A comunidade foi criada com o intuito de ajudar mulheres a ingressarem na área de TI. Para participar entre no link citado a pouco. LET'S GO GIRLS! WE CAN DO **IT**! 
+
+❤️
