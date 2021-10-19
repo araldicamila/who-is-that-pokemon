@@ -32,7 +32,7 @@ export function Game() {
   useEffect(() => {
     if (!openModalSuccess) {
       // Validação se o modal de sucesso está aberto, se não estiver entra na função, "!" na frente, serve para negação
-      let numberPokemon = Math.floor(Math.random() * 150); // Geração do valor randomico (Math.floor: Arredonda o valor)
+      let numberPokemon = Math.floor(Math.random() * 151); // Geração do valor randomico (Math.floor: Arredonda o valor)
 
       numberPokemon = numberPokemon > 0 ? numberPokemon : 1;
 
