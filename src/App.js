@@ -4,7 +4,7 @@ import { Routes } from "./routes/routes";
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/who-is-that-pokemon">
       <Routes />
     </BrowserRouter>
   );
